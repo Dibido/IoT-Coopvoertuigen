@@ -1,0 +1,42 @@
+@startuml
+
+
+node Vehicle {
+	node vehicleArduino{
+		component driving{
+			artifact distancesensing 
+			artifact vehicledriving 
+		}
+		component communication {
+			artifact vehiclelocationinfo 
+			artifact trafficlightinfo
+		}
+	} 
+}
+
+node checkpoint {
+	node Pi {
+		node Software{
+		component controllercommunication {
+			artifact trafficlightstatus
+			artifact locationinformation
+		}
+		component graphicsframework{
+			artifact visualiser
+		}
+		visualiser <-up- locationinformation
+		}
+	}
+}
+
+node trafficlight{
+	node trafficlightArduino{
+		artifact trafficlightstatemachine
+	}
+}
+
+vehiclelocationinfo -up-> locationinformation
+trafficlightstatus -> trafficlightinfo
+trafficlight -right-> trafficlightstatus
+
+@enduml

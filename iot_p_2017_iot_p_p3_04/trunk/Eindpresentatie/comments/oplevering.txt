@@ -1,0 +1,12 @@
+?TOEVOEGEN STOPLICHTEN IN DIA?
+
+voor het opleveren van het eindprototype zijn er nog een aantal dingen waar
+rekening mee gehouden moet worden.
+Zo hebben we last van interference tussen de verschillende ultrasone sensoren
+waarvoor een oplossing voor gezocht moet worden.
+Ook is de huidige richtingscorrectie niet zo accuraat zoals we zouden willen
+waardoor de voertuigen teveel afwijken voordat ze bijsturen. Hiervoor kan er
+nog het een en ander getweaked worden.
+Hiernaast zij nog niet alle doelen uit de opdracht behaald. Zo wordt er nog
+geen rekening gehouden met stoplichten en kan er niet tussen twee voertuigen
+worden ingevoegd of uitgevoegd.

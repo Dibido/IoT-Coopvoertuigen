@@ -1,0 +1,105 @@
+{
+	"variables": [],
+	"info": {
+		"name": "IoT-P_REST",
+		"_postman_id": "031c39a9-54c9-7554-f4ab-a1abc7c18002",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/",
+			"request": {
+				"url": "http://127.0.0.1:5000/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/vehicles",
+			"request": {
+				"url": "http://127.0.0.1:5000/vehicles",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/vehicle",
+			"request": {
+				"url": "http://127.0.0.1:5000/vehicle",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/vehicle/1",
+			"request": {
+				"url": "http://127.0.0.1:5000/vehicle/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/data",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"function js_yyyy_mm_dd_hh_mm_ss () {",
+							"  now = new Date();",
+							"  year = \"\" + now.getFullYear();",
+							"  month = \"\" + (now.getMonth() + 1); if (month.length == 1) { month = \"0\" + month; }",
+							"  day = \"\" + now.getDate(); if (day.length == 1) { day = \"0\" + day; }",
+							"  hour = \"\" + now.getHours(); if (hour.length == 1) { hour = \"0\" + hour; }",
+							"  minute = \"\" + now.getMinutes(); if (minute.length == 1) { minute = \"0\" + minute; }",
+							"  second = \"\" + now.getSeconds(); if (second.length == 1) { second = \"0\" + second; }",
+							"  return year + \"-\" + month + \"-\" + day + \" \" + hour + \":\" + minute + \":\" + second;",
+							"}",
+							"",
+							"postman.clearGlobalVariable(\"timestamp\");",
+							"postman.setGlobalVariable(\"timestamp\", js_yyyy_mm_dd_hh_mm_ss());",
+							"",
+							"// postman.clearGlobalVariable(\"timestampT\");",
+							"// postman.setGlobalVariable(\"timestampT\", (new Date().format('{yyyy}-{MM}-{dd}T{HH}:{mm}:{ss}')).toString());",
+							"",
+							"// postman.clearGlobalVariable(\"timestampUtcIso8601\");",
+							"// postman.setGlobalVariable('timestampUtcIso8601', (new Date()).toISOString());",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://127.0.0.1:5000/data",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Timestamp\": \"{{timestamp}}\",\r\n    \"vehicleId\": 1,\r\n    \"leftSpeed\": 0,\r\n    \"rightSpeed\": 0,\r\n    \"frontDist\": 0,\r\n    \"leftDist\": 0,\r\n    \"rightDist\": 0\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

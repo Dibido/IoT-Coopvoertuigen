@@ -1,0 +1,18 @@
+@startuml
+[Vehicle] as boebot
+interface "locationdata" as robotlocatie
+interface "trafficlightinfo" as stoplichtinfo
+boebot -right-() robotlocatie
+boebot -right-( stoplichtinfo
+[Checkpoint] as controlepunt
+controlepunt -left-( robotlocatie
+controlepunt -left-() stoplichtinfo
+[Trafficlight] as stoplicht
+interface status
+stoplicht -left-() status
+controlepunt -right-( status
+[Visualiser] as visualiser
+interface "locationdata" as visuallocatie
+controlepunt -up-() visuallocatie 
+visualiser -left( visuallocatie
+@enduml

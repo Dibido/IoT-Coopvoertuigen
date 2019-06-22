@@ -1,0 +1,11 @@
+UltrasonicSensor	KEYWORD1
+IRSensor			KEYWORD1
+
+getDistance			KEYWORD2
+isEnabled			KEYWORD2
+turnOn				KEYWORD2
+turnOff				KEYWORD2
+turnOffFor			KEYWORD2
+getBetween			KEYWORD2
+
+SENSORSTATE			LITERAL2	

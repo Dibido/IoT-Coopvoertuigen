@@ -1,0 +1,13 @@
+@startuml
+[Vehicle] as boebot
+interface "vehicleData" as robotlocatie
+interface "controlMessage" as controller
+boebot -right-() robotlocatie
+boebot -right-( controller
+[Visualiser] as controlepunt
+interface "controlMessage" as controller
+controlepunt -left-( robotlocatie
+controlepunt -left-() controller
+[REST-server] as rest
+rest -right( robotlocatie
+@enduml

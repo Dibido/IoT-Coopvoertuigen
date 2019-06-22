@@ -1,0 +1,28 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+DrivingControl			KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+changeSpeed				KEYWORD2
+turn					KEYWORD2
+setAccelerationSpeed	KEYWORD2
+changeWheelSpeed		KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+STATIONARY				LITERAL1
+SPEED_STEP				LITERAL1
+TurnMode				LITERAL1
+STATIC					LITERAL1
+DRIVING					LITERAL1
+Direction				LITERAL1
+CLOCKWISE				LITERAL1
+COUNTER_CLOCKWISE		LITERAL1

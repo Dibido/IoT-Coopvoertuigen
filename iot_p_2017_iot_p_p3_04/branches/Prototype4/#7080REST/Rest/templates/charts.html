@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<a href="http://127.0.0.1:5000/vehicles">vehicles page</a>
+<div id="distanceschart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="frontdistancechart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div id="speedchart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+<script>
+
+{%if leftdistancesdata and rightdistancesdata %}
+	var chartleftdistancesdata = {{ leftdistancesdata }};
+	var chartrightdistancesdata = {{ rightdistancesdata }};
+{% else %}
+	window.alert("no distancesdata entered into template");
+{% endif %}
+
+{%if frontdistdata %}
+	var chartfrontdistancesdata = {{ frontdistdata }};
+{% else %}
+	window.alert("no frontdistancedata entered into template");
+{% endif %}
+
+{%if leftspeeddata and rightspeeddata %}
+	var chartleftspeeddata = {{ leftspeeddata }};
+	var chartrightspeeddata = {{ rightspeeddata }};
+{% else %}
+	window.alert("no speeddata entered into template");
+{% endif %}
+
+Highcharts.chart('distanceschart', {
+
+	title: {
+			text: 'Distances over time'
+	},
+
+	xAxis: {
+		type: 'datetime'
+	},
+
+	yAxis: {
+			title: {
+					text: 'Distance'
+			}
+	},
+	legend: {
+			layout: 'vertical',
+			align: 'right',
+			verticalAlign: 'middle'
+	},
+
+	plotOptions: {
+			series: {
+					label: {
+							connectorAllowed: false
+					},
+					pointStart: 2010
+			}
+	},
+
+	series: [{
+			name: 'LeftDist',
+			data: chartleftdistancesdata
+	}, {
+			name: 'RightDist',
+			data: chartrightdistancesdata
+	}],
+
+	responsive: {
+			rules: [{
+					condition: {
+							maxWidth: 500
+					},
+					chartOptions: {
+							legend: {
+									layout: 'horizontal',
+									align: 'center',
+									verticalAlign: 'bottom'
+							}
+					}
+			}]
+	}
+
+});
+
+Highcharts.chart('frontdistancechart', {
+      chart: {
+          zoomType: 'x'
+      },
+      title: {
+          text: 'Frontdistance over time'
+      },
+      subtitle: {
+          text: document.ontouchstart === undefined ?
+                  'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+      },
+      xAxis: {
+          type: 'datetime'
+      },
+      yAxis: {
+          title: {
+              text: 'Distance in cm'
+          }
+      },
+      legend: {
+          enabled: false
+      },
+      plotOptions: {
+          area: {
+              fillColor: {
+                  linearGradient: {
+                      x1: 0,
+                      y1: 0,
+                      x2: 0,
+                      y2: 1
+                  },
+                  stops: [
+                      [0, Highcharts.getOptions().colors[0]],
+                      [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                  ]
+              },
+              marker: {
+                  radius: 2
+              },
+              lineWidth: 1,
+              states: {
+                  hover: {
+                      lineWidth: 1
+                  }
+              },
+              threshold: null
+          }
+      },
+
+      series: [{
+          type: 'area',
+          name: 'Distance',
+          data: chartfrontdistancesdata
+      }]
+  });
+
+Highcharts.chart('speedchart', {
+      chart: {
+          zoomType: 'x'
+      },
+      title: {
+          text: 'Speed over time'
+      },
+      subtitle: {
+          text: document.ontouchstart === undefined ?
+                  'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+      },
+      xAxis: {
+          type: 'datetime'
+      },
+      yAxis: {
+          title: {
+              text: 'Speed'
+          }
+      },
+      legend: {
+          enabled: false
+      },
+      plotOptions: {
+          area: {
+              fillColor: {
+                  linearGradient: {
+                      x1: 0,
+                      y1: 0,
+                      x2: 0,
+                      y2: 1
+                  },
+                  stops: [
+                      [0, Highcharts.getOptions().colors[0]],
+                      [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                  ]
+              },
+              marker: {
+                  radius: 2
+              },
+              lineWidth: 1,
+              states: {
+                  hover: {
+                      lineWidth: 1
+                  }
+              },
+              threshold: null
+          }
+      },
+
+      series: [{
+          name: 'Speed',
+          data: chartleftspeeddata
+      }, {
+				name : 'rightSpeed',
+				data : chartrightspeeddata
+			}]
+  });
+</script>

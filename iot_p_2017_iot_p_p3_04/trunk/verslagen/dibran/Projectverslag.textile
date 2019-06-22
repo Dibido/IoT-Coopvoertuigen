@@ -1,0 +1,191 @@
+h1=. Verantwoordingsverslag IoT Project
+
+p=. *Dibran Dokter*
+
+p=. *587252*
+
+---
+
+h1. Inleiding
+
+In dit document is mijn verslag voor het IoT project te vinden. Dit document is geschreven om een verslag te geven van het project en aan te tonen dat ik aan de gestelde competenties voldoe.
+
+De aanleiding van dit project is een door school opgestelde opdracht, waarbij een fictief bedrijf een prototype voor coöperatieve voertuigen wil laten ontwikkelen. Deze coöperatieve voertuigen rijden samen in een stoet en remmen en trekken gelijktijdig op. Ook kunnen nieuwe voertuigen in-en-uitvoegen.
+
+Dit wordt gedaan door een groep van 5 studenten in een tijd van 8 weken door middel van de prototyping ontwikkelmethode. Het doel is om een haalbaarheidsstudie uit te voeren door het maken van een prototype en aan de hand van dit prototype een advies te geven over de opschaling ervan.
+
+Mijn uitdaging binnen dit project is het uitvoeren van mijn rol als procesbegeleider. Dit omdat ik bij vorige projecten vaak rollen had die niet zo directe impact op het functioneren van de groep hebben. Ik denk ook dat deze rol een stuk meer communicatieve vaardigheden vergt om het groepsproces goed te kunnen begeleiden.
+
+Mijn leerdoelen zijn het toepassen van het bij de professional skills gemaakte stappenplan. Het andere leerdoel is het aanhouden van een observerende houding tijdens vergaderingen zodat ik mijn groepsgenoten de ruimte geef om hun eigen inbreng te kunnen geven.
+
+Het verslag is opgedeeld in de competenties, waarbij wordt toegelicht wat elke competentie inhoudt. Ook worden de criteria toegelicht. Daarna worden de benoemde criteria van de competenties toegelicht. Aan het einde van dit document zijn de literatuurlijst en de bijlages te vinden.
+
+---
+
+h1. Inhoudsopgave
+
+{{toc}}
+
+---
+
+h1. Kwaliteit deelproducten
+
+In dit hoofdstuk beoordeel ik de deelproducten zowel op basis van de in het [[Plan_van_Aanpak]] opgestelde eisen onder het hoofdstuk op te leveren producten. Wanneer het om een prototype gaat beoordeel ik deze door te kijken of de gestelde doelen behaald zijn en de kwaliteit.
+
+h2. Plan van Aanpak
+
+Het plan van aanpak moet voldoen aan de ICA controlekaart en opgesteld zijn aan de hand van de "PvA handleiding":https://sasscm.han.nl/redmine/attachments/2779/HULP%20bij%20het%20schrijven%20van%20het%20projectverslag%20S1%202017-2018(1).pdf. Naar mijn weten hebben we aan beide eisen voldaan. Het document voldoet aan de eisen van de ICA controlekaart en is geschreven aan de hand van de handleiding. Ook hebben we als groep de structuur van het document zorgvuldig gecontroleerd.
+
+Naar mijn mening zijn er verschillende hoofdstukken welke nog beter hadden hadden gekund. Zo is er nog geen duidelijke doelstelling opgesteld waaraan het prototype getest kan worden aan het einde van het project.
+Ook heeft het hoofdstuk risico's naar mijn gevoel niet zoveel nut omdat er eigenlijk geen goede risico's instaan maar alleen maar risico's welke redelijk voor de hand liggen en makkelijk op te lossen zijn of waarvoor eigenlijk geen directe oplossing beschikbaar is.
+Ook bleek het moeilijk te zijn om een zinvolle planning te maken naast een globale planning met alle data. Dit omdat er prototyping gedaan wordt en er dus nog niet van tevoren een aantal doelen gesteld kunnen worden. Hiernaast is het opstellen van risico's moeilijk omdat het moeilijk is om waardevolle risico's te vinden waarbij het hoofdstuk tot zijn recht komt.
+
+Bij het opstellen van het Plan van Aanpak waren er nog wel wat problemen omdat sommige hoofdstukken moeilijk zijn te stellen omdat er bij dit project geen duidelijke/uitgebreide opdracht is en we deze dus groterdeels zelf moeten achterhalen. Het gaat hier vooral om de hoofdstukken Context, Aanleiding en Doelstelling. We hebben dit aan de hand van de gegeven data en de verder vergaarde data van de opdrachtgever ingevuld.
+
+Bij de toetsing van het plan van aanpak kwamen er nog wat fouten aan het licht, zo hadden we moeite met het SMART maken van de eisen van de producten in hoofdstuk 10 en was de doelstelling nog niet duidelijk genoeg om aan de hand van het gemaakte product te kunnen controleren of het doel behaald is. Deze punten hebben we na de beoordeling verbeterd en het plan van aanpak voldoet nu aan de gestelde eisen.
+
+h1. Prototypes
+
+Bij het beoordelen van de verschillende prototypes binnen het project wordt er gevraagd om een mening te geven over de kwaliteit van een belangrijk stuk code en het bijhorende ontwerp en tenminste één onderzoeksverslag. Deze producten moeten zoals andere deelproducten voldoen aan de gestelde eisen in het [[Plan_van_Aanpak]].
+
+h2. Prototype 1 - Stoppen voor obstakel
+
+Voor dit prototype was het opstarten en het goed structureren van het project een belangrijk onderdeel wat niet bijdroeg aan het prototype van deze iteratie. Ook moesten er een aantal onderzoeken gedaan worden die de basis vormen voor de rest van het project en dus van groot belang zijn.
+
+Ik denk dat het ons goed gelukt is om een degelijke opzet te maken bij het eerste prototype. Zo hebben we ervoor gezorgd dat de code die we schrijven door middel van een library makkelijk aan te passen en herbruiken is. Bij het schrijven van deze code kwamen we er ook achter dat we op sommige punten Raymond moesten helpen omdat deze nog geen OSM heeft gevolgd en dus bepaalde codestructuren nog niet kent.
+
+Bij dit prototype was het ontwerpen en het schrijven van de besturingsinterface voor de boe-bot een belangrijk product. Hiervoor hebben we eerst een "onderzoek":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Onderzoek_Boe-Bot_Besturing gedaan naar hoe we de boe-bot het beste kunnen besturen en daarna een "ontwerp":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/03_Detailed_Design_Description_-_SDD#Besturingsinterface gemaakt. Hierna hebben we aan de hand van dit ontwerp een "library":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/libraries/DrivingControl geschreven welke gebruikt kan worden in de "hoofdcode":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/BoeBotAlgorithm om de boe-bot goed aan te sturen.
+
+Het onderzoek hebben we gedaan om verschillende manieren voor het besturen van de boe-bot te vergelijken en de makkelijkste manier te kiezen waarmee we de bot kunnen besturen. Aan de hand van deze keuze hebben we daarna een ontwerp opgesteld:
+
+!{width:500px}https://sasscm.han.nl/svn/iot_p_2017_iot_p_p3_04/trunk/sdd/detailedDesignDescription/designClassDiagrams/besturingsinterface/designClassDiagramBesturingsinterface.png!
+
+Het ontwerp maakt gebruik van een centrale klasse welke een aantal methodes heeft om het voertuig te besturen. Er zijn een aantal overkoepelende methodes die het besturen makkelijker maken.
+
+Een belangrijk stuk code voor het functioneren van het besturen van de boe-bot is het aanmaken van een voertuig object welke de verschillende componenten van het echte voertuig heeft:
+
+<pre><code class="cpp">
+Vehicle::Vehicle() :
+  leftWheel(),
+  rightWheel(),
+  control(leftWheel, rightWheel, ACCELERATION_SPEED, DECELERATION_SPEED),
+  ir(SENSOR_PIN),
+{}
+</code></pre>
+
+Zo hebben we dus een compleet voertuig die zelf weer bestaat uit meerdere onderliggende delen. Dit zorgt ervoor dat de verschillende delen van het systeem goed worden gescheiden van elkaar waardoor deze los kunnen worden aangepast. Wanneer er geen verschil is in de interface zal dit geen problemen geven voor de rest van het systeem.
+
+Naar mijn mening is dit prototype zeer goed gelukt omdat het als eerste prototype een goede opzet is voor de rest van de prototypes. Aan de hand van de geschreven code is het makkelijk om dingen aan te passen of toe te voegen. En het is makkelijk om het overzicht te houden omdat het als een echt voertuig is gemodelleerd.
+
+h1. Kwaliteit eindproduct
+
+[Invullen]
+
+h1. Evaluatie projectmethode
+
+Bij de vorige projecten hebben we gebruik gemaakt van SCRUM. Bij dit project gaan we echter gebruik maken van prototyping. Hierbij maken we als groep zo snel mogelijk een werken prototype om deze voor te kunnen leggen aan de product owner. Wanneer er keuzes gemaakt moeten worden doen we hiervoor een onderzoek en leggen we de opties aan de product owner voor. Bij deze projectmethode is de communicatie met de product owner dan ook van groot belang.
+
+Ik denk dat we ons binnen dit project nog teveel hebben vastgehouden aan de SCRUM methode die we bij de vorige projecten hebben gebruikt. Zo werkten we met prototypes waarbij de deadlines na 2 weken waren, wat bij een SCRUM methodiek normaal is. Echter is het bij prototyping de bedoeling om het afmaken van het prototype vooraan te stellen en hier geen duidelijke planning voor te maken.
+
+Ook hadden we moeite met het pro-actief overleggen met de product owner. Vaak hebben we gewacht tot de product owner langskwam terwijl het beter was geweest om zelf bij hem langs te gaan.
+Ook hadden we beter onze opties aan de product owner voor kunnen leggen. Wat we nu hebben gedaan is het zelf onderzoeken van het probleem en een conclusie trekken en deze conclusie met de product owner delen. Hierbij ontstaat er geen conversatie over wat de beste manier is om een probleem op te lossen.
+
+* Beschrijving van de belangrijkste kenmerken van de methode
+* Een vergelijking van het concrete project met de methode: werkte deze methode? Op welke punten wel/niet? Waarom?
+
+h1. Projectrol
+
+Bij de professional skills lessen binnen de coursefase heb ik de rol van procesbegeleider gekozen. Deze rol voer ik dan ook binnen het project uit.
+
+* Een beschrijving van de rol(len) die je hebt gehad in het project waarin je inzichtelijk maakt:
+** Wat die rol(len) inhield(en) in de praktijk, afgezet tegen de rolbeschrijving die in theorie, in het plan van aanpak of je best practice was gegeven.
+** Situatiebeschrijvingen ter onderbouwing van je leerproces op dit gebied
+** Leerpunten voor een volgende keer dat jij deze rol zou moeten uitvoeren
+** In hoeverre deze rol jou op het lijf geschreven is, inclusief motivatie
+** Vergelijking met deze rol en rollen in eerdere projecten: welke ligt mij het beste?
+
+h1. Competenties
+
+h2. IoT-6 Onderzoek sensortechnieken
+
+Hier wordt de competentie IoT-6 aangetoond welke luidt : " ??De student kan onderzoek doen naar sensortechnologieën en op grond daarvan een selectie maken voor
+toepassing in een gedistribueerde embedded omgeving en levert hiervoor een onderzoeksverslag op.?? ".
+
+Ik heb ervoor gekozen om deze competentie aan te tonen omdat ik me bij het vorige project vooral bezig heb gehouden met het maken van het netwerkcomponent.
+-tot nu toe vooral bezig heb gehouden met sensoren en hierbij dus ook een goede verantwoording kan afleggen.-
+
+Voor deze competentie heb ik het "praktijkonderzoek richtingscorrectie":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Praktijkonderzoek_richtingcorrectie_Boe-Bots geschreven. Het doel van dit onderzoek is onderzoeken hoe we de Boe-Bots welke een afwijking hebben gecorrigeerd een pad kunnen laten volgen. Uit het "literatuuronderzoek":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Literatuuronderzoek_Boe-Bot_richtingscorrectie is al gebleken dat het het beste is om de afstanden tot de muren te meten. Echter is de vraag welke sensor daarvoor het beste gebruikt kan worden. Om dit te onderzoeken heb ik de verschillende sensoren getest en deze met elkaar vergeleken aan de hand van de verschillende voor-en-nadelen.
+
+Ik heb ervoor gekozen om bij dit praktijkonderzoek dezelfde structuur als bij de onderzoeken binnen de course aan te houden. Dus het aangeven van de gebruikte code en eventuele instellingen. Daarna de data met toelichtingen waar nodig. Daarna het aansluitingsschema en de testopstelling en de conclusie. Bij de conclusie heb ik ervoor gekozen om tabellen te gebruiken met de voor-en-nadelen van de verschillende sensoren. Dit heb ik gedaan omdat dit overzicht geeft zodat je in een oogopslag kan zien waarvoor de sensor wel of niet goed is voor deze applicatie.
+
+Aan de hand van de verschillende conclusies per geteste sensor heb ik aan het einde een eindconclusie getrokken waarbij de verschillende sensoren met elkaar worden vergeleken.
+
+Mijn onderzoek voldoet aan de eisen die gesteld worden in het [[Plan_van_Aanpak]] en is gereviewed door twee groepsgenoten. Bij deze "reviews":https://sasscm.han.nl/redmine/issues/6608 heb ik de feedback van mijn groepsgenoten verwerkt. Na deze feedback verwerkt te hebben heb ik de taak op done gezet. Zoals ook in de feedback te zien is waren mijn groepsgenoten tevreden over mijn geleverde werk. Wel ben ik iets uit de tijd gelopen. Dit komt omdat ik wat moeite had met het vinden van geschikte code en het testen van de compasmodule.
+
+Wel heb ik het gevoel dat ik aan het einde van mijn onderzoek een definitieve conclusie had moeten schrijven waarbij een keuze wordt gemaakt voor een bepaalde sensor aan de hand van het onderzoek. Omdat ik dit niet heb gedaan ontstond er nog wat verwarring binnen de groep.
+
+Uit het maken van dit onderzoek is gebleken dat het moeilijk is om een definitieve keuze te maken binnen een onderzoek over wat er de rest van het project gebruikt gaat worden. Wel is het een goede richtlijn voor het controleren van latere veranderingen. Zo hebben we later gekozen om toch een andere sensor te gaan gebruiken. Bij het maken van die keuze hebben we gerefereerd aan dit onderzoek en daaruit de conclusie getrokken dat deze sensor beter was om te gebruiken.
+Wat ik hiervan heb geleerd is dat het van belang is om duidelijk op te stellen waaraan een sensor moet voldoen om goed te zijn in de context van de opdracht. Wanneer die criteria goed opgesteld zijn dan kan er later makkelijk teruggekeken worden en een nieuwe concusie getrokken worden.
+
+h2. IoT 4 Webservices
+
+Omdat er in het design voor de eerste twee prototypes helemaal geen webservices gebruikt zijn hebben we dit bij het derde prototype gedaan. Eerst hadden we nog wat moeite om een plek te vinden waar een webservice gebruikt zou kunnen worden. Na wat nagedacht te hebben hebben we besloten om een webservice te gebruiken om de data van de verschillende voertuigen op te kunnen vragen in verschillende vormen.
+Naast het zoeken naar een goede plek is het moeilijk om genoeg taken te maken om ervoor te zorgen dat iedereen deze competentie aan kan tonen.
+
+h2. IoT 5 Informatiebeveiliging
+
+Net zoals het gebruiken van webservices hebben we in de eerste twee iteraties ook geen informatiebeveiliging toegepast. Dit omdat er of nog een netwerk was of dat deze nog geen belangrijke data verzond. Voor deze taak hadden we al wel een goed idee hoe we dit wilden maken. Hierdoor was het ook makkelijker om de juiste hoeveelheid taken op te stellen zodat iedereen aan deze competentie kan voldoen.
+
+h2. IoT 7 Realtime-aspecten
+
+Voor het maken van een realtime systeem is het belangrijk om de tijdsduur van de acties binnen de code in de gaten te houden. Zo heeft het toevoegen van een delay of een while statement in de code impact op het programma. Dit zorgt ervoor dat eerst dat stuk code afgelopen moet zijn voordat er wat anders gedaan kan worden. Dit zorgt ervoor dat de rest van het systeem niks kan doen wat problemen kan veroorzaken voor bijvoorbeeld het rijden van het voertuig of de communicatie.
+
+* Motivatie voor de keuze van de competenties (voor zover deze niet gegeven zijn in de projecthandleiding)
+* Situatiebeschrijvingen waarin je aangeeft wat je plan was, wat het resultaat en jouw concrete bijdrage daaraan en wat dat vervolgens betekende voor het project als geheel, en wat jouw inzichten waren
+* Jouw concrete bijdrage wordt ondersteund met 3 tot 5 verwijzingen naar onderliggend materiaal
+* De verwijzingen geven inzicht in de kwantiteit en kwaliteit van jouw bijdrage(n) op dit punt
+
+h1. Leerdoelen
+
+h2. Uitvoeren stappenplan
+
+Het eerste leerdoel wordt door school gegeven. Dit leerdoel is het uitvoeren van het bij professional skills opgestelde stappenplan. Hierbij is het van belang dat de projectrol zo goed mogelijk uit wordt gevoerd en er waar nodig terug wordt gegrepen op het stappenplan.
+
+Mijn rol binnen dit project is procesmanager. Als procesmanager houdt ik mezelf vooral bezig met functioneren van het team en probeer ik dit functioneren positief te beïnvloeden.
+
+Bij het functioneren als procesmanager heb ik het stappenplan niet veel gebruikt. Achterafgezien had het uitvoeren van bepaalde taken op het stappenplan mij als procesmanager wel kunnen helpen om eventuele bottlenecks al eerder te kunnen identificeren door bij de PSU
+ aan de hand van de gestelde vergaderingen kennis te maken met de groep. Zo heeft Raymond een achterstand qua kennis in vergelijking met de rest van de groep omdat hij OSM nog niet heeft gevolgd en we die kennis wel gebruiken bij het programmeren en ontwerpen. Ook heeft hij aangegeven problemen te hebben met het schrijven van documentatie. Wanneer we deze informatie eerder hadden gehad hadden we hier beter op in kunnen spelen en de productiviteit van de groep positief kunnen beïnvloeden.
+
+Als ik deze rol nogmaals uit zo voeren zou ik dat soort vergaderingen zeker houden om een goed inzicht te krijgen in de groep en aan de hand van die informatie later beter in te kunnen grijpen.
+
+Aan het begin van het project heb ik deze wel overgekeken om een idee te krijgen van wat ik als procesmanager moet doen maar heb deze niet als stappenplan gebruikt.
+Aan het begin van het project hadden we twee procesmanagers, namelijk mij en Thijs. We hebben er toen samen voor gekozen dat thijs van rol zou wisselen en de rol van productowner-by-proxy op zich zou nemen. Wel heb ik het gevoel dat Thijs mij als procesmanager nog veel heeft geholpen door zich pro-actief met de taken van de procesmanager bezig te houden. Zo heb ik met Thijs overlegd wat er in de DSU template moest komen en heeft hij ook een aantal DSU's de leiding genomen.
+
+Zie "Situatiebeschrijvingen uitvoeren stappenplan":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Situatiebeschrijvingen_leerdoel_uitvoeren_stappenplan voor de situatiebeschrijvingen die bij dit leerdoel horen.
+
+h2. Observeren vergaderingen
+
+Bij vergaderingen heb ik het gevoel dat ik te actief ben waardoor andere groepsgenoten moeite hebben om aan bod te komen. Mijn leerdoel is om passier te zijn bij het houden van vergaderen met het doel om ervoor te zorgen dat mijn groepsgenoten beter aan het woord kunnen komen. Om te controleren of mijn leerdoel helpt bij het houden van vergaderen en het overleggen in de groep zal ik de vergaderingen observeren en de veranderingen noteren en bespreken met de rest van de groep.
+
+Mijn persoonlijke leerdoel luidt " __Ik ga tijdens de groepsvergaderingen een meer observerende houding aanhouden om ruimte te geven aan de inbreng van mijn groepsgenoten.__ ".
+
+De aanleiding voor dit leerdoel is dat ik veel te vaak dingen in de groep gooi tijdens gesprekken zonder andere mensen de kans te geven om zelf met een inbreng te komen. Dit doe ik ook aan de hand van de "IPV notities":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/IPV_notities van de eerst IPV vergadering waarin ik aan Raymond en David de feedback heb gegeven om actiever te zijn tijdens vergaderingen. David heeft zelf ook als leerdoel om vaker dingen bij te dragen tijdens vergaderingen, mijn leerdoel helpt hem dus ook om zijn "leerdoel":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Verantwoordingsverslag_-_DB#Eigen-leerdoel makkelijker te kunnen bewerkstelligen.
+
+Zie "Situatiebeschrijvingen observeren vergaderingen":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Situatiebeschrijvingen_leerdoel_observeren_vergaderingen voor de situatiebeschrijvingen die bij dit leerdoel horen.
+
+Ik denk dat dit leerdoel mij zal helpen binnen dit project en hieropvolgende projecten omdat ik een passievere houding aan kan nemen en de groepsgenoten zelf hun eigen inbreng te laten brengen wat kan helpen bij het werkproces van de groep.
+
+* Situatiebeschrijvingen waarin je aangeeft wat je plan was, wat het resultaat en jouw concreet bijdrage daaraan, en wat dat vervolgens betekende voor het project als geheel, en wat jouw inzichten ten aanzien van je eigen functioneren waren.
+* Jouw concrete bijdrage wordt ondersteund met voldoende verwijzingen/links naar onderliggend materiaal
+
+h1. Conclusie
+
+* Aansluit op de inleiding
+* Aangeeft waar jij op dit moment staat ten opzichte van de competentie van jouw semester, gegeven je ervaringen in het project en eventueel eerder in je studie.
+* Aangeeft waar jij op dit moment staat ten opzichte van de eindkwalificaties van jouw profiel, gegeven je ervaringen in het project en eventueel eerder in je studie.
+
+h1. Bijlagen
+
+"Factsheet":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Factsheet
+"Situatiebeschrijvingen uitvoeren stappenplan":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Situatiebeschrijvingen_leerdoel_uitvoeren_stappenplan
+"Situatiebeschrijvingen observeren vergaderingen":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Situatiebeschrijvingen_leerdoel_observeren_vergaderingen

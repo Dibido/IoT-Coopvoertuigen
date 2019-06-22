@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Vehicles</title>
+</head>
+<body>
+	<ul id="vehicles">
+    {% for vehicle in vehicles %}
+        <li><a href="http://127.0.0.1:5000/vehicle/{{ vehicle['vehicleId'] }}">Vehicle {{ vehicle['vehicleId'] }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "d0a9d2a3-f4d1-413f-aa59-bc0ca355fc0e",
+		"name": "REST Server Test Scripts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Overzichtspagina",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1/vehicles",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Voertuigdata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://127.0.0.1/vehicle/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"vehicle",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "vehicleId",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "leftSpeed",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "rightSpeed",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "frontDist",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "leftDist",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "rightDist",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

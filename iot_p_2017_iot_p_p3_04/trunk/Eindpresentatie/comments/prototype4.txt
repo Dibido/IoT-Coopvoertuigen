@@ -1,0 +1,13 @@
+?UITVOEREN TESTS TOEVOEGEN IN DIA?
+
+Bij prototype 4 hebben we een REST server opgezet om de data van de voertuigen
+te kunnen ananlyseren
+Eerst hebben we een REST-Api protocol opgezet zoals bij het weerstation.
+Hierna hebben we Flask opgezet aan de hand van de tutorial bij things door
+deze aan te passen naar onze requirements.
+Hiernaast hebben we jinjo templates toegepast om de pagina's dynamisch te
+maken wat erg goed werkt samen met highcharts.
+We hebben ervoor gekozen om highcharts te gebruiken omdat dit framework
+makkelijk te gebruiken is en we al bestaande voorbeelden konden gebruiken.
+Naast het opzetten van de REST-Server hebben we gefocust op het uitvoeren van
+tests.

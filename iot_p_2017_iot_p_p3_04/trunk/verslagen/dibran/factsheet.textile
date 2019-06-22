@@ -1,0 +1,42 @@
+h1. Factsheet
+
+|_. Competentie |_. Link naar het product |_. Omschrijving eigen bijdrage |
+|IoT-1: De student gebruikt een ontwikkelomgeving voor embedded controllers en PC-server.|||
+|IoT-2: De student maakt gebruik van versiebeheer voor de code en documentatie bij het realiseren van programma's.|||
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/libraries|Code opgesplitst in verschillende libraries|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/libraries/voorbeeldLibrary|Voorbeeldlibrary toegevoegd|
+|IoT-3: De student kan (draadloze) netwerkprotocollen en -technologieën onderzoeken, analyseren en toepassen en
+implementeren in embedded systemen, en daarvan verslag doen.|||
+||https://sasscm.han.nl/redmine/issues/6626|Netwerkontwerp gereviewed|
+|IoT-4: De student kan protocollen en webservices implementeren op een microcontroller-, server- en cloudomgeving.|||
+|IoT-5: De student kan maatregelen implementeren die de informatiebeveiliging van het netwerk ten goede komen.|||
+|IoT-6: De student kan onderzoek doen naar sensortechnologieën en op grond daarvan een selectie maken voor
+toepassing in een gedistribueerde embedded omgeving en levert hiervoor een onderzoeksverslag op.|||
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Praktijkonderzoek_richtingcorrectie_Boe-Bots|Praktijkonderzoek richtingcorrectie geschreven|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/03_Detailed_Design_Description_-_SDD#Afstandsbepaling|Opstellen design afstandbepaling|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/libraries/DistanceSensor|DistanceSensor library geschreven|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/03_Detailed_Design_Description_-_SDD#Design-Sub-System-Rechtdoorrijden|Design rechtdoorrijden opgesteld|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/libraries/DrivingCorrection|Code drivingCorrection geschreven|
+|IoT-7: De student kan realtime aspecten integreren in het ontwerpen en implementeren van embedded systemen, met
+timers, interrupts en/of een RTOS .|||
+|IoT-8: De student kan prototyping toepassen in het ontwikkelen en verkennen van nieuwe technologieën in embedded
+systemen.|||
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Plan_van_Aanpak|Hoofdstukken 8 en 9 geschreven|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/08-05-2018_Retrospective_Eerste_Iteratie|Opstellen en leiden retrospective|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/03_Detailed_Design_Description_-_SDD#Deployment-Diagram|Opstellen deployment diagram|
+||"Overzicht reviews":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/time_entries?utf8=%E2%9C%93&set_filter=1&sort=spent_on%3Adesc&f%5B%5D=spent_on&op%5Bspent_on%5D=*&f%5B%5D=user_id&op%5Buser_id%5D=%3D&v%5Buser_id%5D%5B%5D=me&f%5B%5D=comments&op%5Bcomments%5D=%7E&v%5Bcomments%5D%5B%5D=review&f%5B%5D=&c%5B%5D=spent_on&c%5B%5D=user&c%5B%5D=activity&c%5B%5D=issue&c%5B%5D=comments&c%5B%5D=hours&group_by=&t%5B%5D=hours&t%5B%5D=|Reviews geplaatst en verwerkt|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Codestandaard|Codestandaard opgesteld|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/Definition_of_Done|Definition of done opgesteld|
+|IoT-9: De student kan de werking van het prototype gestructureerd testen.|||
+|IoT-10: De student functioneert op professionele wijze in een team en in het contact met de opdrachtgever.|||
+|IoT-11: Kan zich zelfstandig verder verdiepen in de beroepstaak.|||
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/IPV_notities|IPV gesprekken gehouden|
+|Overig|||
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/06_User_interface_sketches_-_SRS|Visualiser sketches gemaakt en overlegd met productowner|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/repository/show/trunk/code/coopvehiclesui|Visaliser geschreven|
+||https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/wiki/03_Detailed_Design_Description_-_SDD#Design-Visualiser|Design visualiser opgesteld|
+
+"Overzicht gelogde tijd op taken":https://sasscm.han.nl/redmine/projects/iot_p_2017_iot_p_p3_04/time_entries?c%5B%5D=spent_on&c%5B%5D=user&c%5B%5D=activity&c%5B%5D=issue&c%5B%5D=comments&c%5B%5D=hours&f%5B%5D=spent_on&f%5B%5D=user_id&f%5B%5D=&group_by=&op%5Bspent_on%5D=%2A&op%5Buser_id%5D=%3D&per_page=50&set_filter=1&sort=spent_on%3Adesc&t%5B%5D=hours&t%5B%5D=&utf8=%E2%9C%93&v%5Buser_id%5D%5B%5D=me
+
+* Links naar 3-5 specifieke bijdragen en een korte toelichting op jouw bijdrage
+* Uit de links moet blijken dat je voldoende kwantitatieve en kwalitatieve bijdrage hebt geleverd.
